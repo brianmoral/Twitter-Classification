@@ -61,6 +61,7 @@ def averaging_plot(accuracy_df, x_label, title: str):
     mean = accuracy_df.mean()
     std = accuracy_df.std()
 
+    sns.set_theme()
     plt.figure(figsize=(10,8))
     bp = sns.boxplot(data=accuracy_df, showmeans=True,
                 meanprops={
